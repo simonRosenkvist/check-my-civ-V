@@ -1,0 +1,134 @@
+.unit {
+	font-weight: bold;
+	font-family: 'Cinzel', serif;
+}
+
+.unitE {
+	background-color: #ddf;
+	font-weight: bold;
+	font-family: 'Cinzel', serif;
+}
+
+.building {
+	font-weight: bold;
+	font-family: 'Cinzel', serif;
+}
+
+.buildingE {
+	background-color: #ddf;
+	font-family: 'Cinzel', serif;
+}
+
+.ability {
+	font-weight: bold;
+	font-family: 'Cinzel', serif;
+}
+
+.abilityE {
+	background-color: #ddf;
+	font-weight: bold;
+	font-family: 'Cinzel', serif;
+}
+
+.unitDescription {
+	margin-left: 2.5%;
+	margin-right: 40%;
+	font-style: italic;
+}
+
+.unitDescriptionE {
+	background-color: #ddf;
+	margin-left: 2.5%;
+	font-style: italic;
+}
+
+.buildingDescription {
+	margin-left: 2.5%;
+	margin-right: 40%;
+	font-style: italic;
+}
+
+.buildingDescriptionE {
+	background-color: #ddf;
+	margin-left: 2.5%;
+	font-style: italic;
+}
+
+.tileDescription {
+	margin-left: 2.5%;
+	margin-right: 40%;
+	font-style: italic;
+}
+
+.tileDescriptionE {
+	background-color: #ddf;
+	margin-left: 2.5%;
+	font-style: italic;
+}
+
+.abilityDescription {
+	margin-left: 2.5%;
+	margin-right: 40%;
+	font-style: italic;
+}
+
+.abilityDescriptionE {
+	background-color: #ddf;
+	display: none;
+	margin-left: 2.5%;
+	font-style: italic;
+	width: 58%;
+}
+
+.tileImprovement {
+	display: none;
+	font-weight: bold;
+	font-family: 'Cinzel', serif;
+}
+
+.tileImprovementE {
+	display: none;
+	font-weight: bold;
+	background-color: #ddf;
+	font-style: italic;
+	font-family: 'Cinzel', serif;
+}
+
+.civ {
+	border: solid 1px #000;
+}
+
+.civE {
+	background-color: #ddf;
+	border: solid 1px #000;
+}
+
+.civD {
+	background-color: #dfd;
+	border: solid 1px #000;
+}
+
+ul {
+	list-style: none;
+	width: 15%;
+}
+
+h1 {
+	font-family: 'Cinzel', serif;
+	text-align: center;
+	font-size: 48px
+}
+
+h3 {
+	font-family: 'Cinzel', serif;
+	margin-left: 20px;
+}
+
+h3:hover {
+	cursor: pointer;
+	text-shadow: 0.5px 0.5px;
+}
+
+li {
+	margin-bottom: 20px;
+}

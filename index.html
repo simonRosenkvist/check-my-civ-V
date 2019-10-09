@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Check my Civ V</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/flags.css">
+	<link href="https://fonts.googleapis.com/css?family=Cinzel&display=swap" rel="stylesheet">
+	<script type="text/javascript" src="js/Toggle.js"></script>
+	<script type="text/javascript" src="js/Main.js"></script>
+</head>
+<body>
+	<h1>Civilization V</h1>
+
+	<ul class="civ" id="america"> <h3>America</h3>
+		<li class="unit" id="minuteman">Minuteman</li>
+		<li class="unitDescription">Replaces Musketman. Gains Drill I promotion. Ignores terrain cost. Earn points toward a Golden Age for each enemy unit killed</li>
+		<li class="unit" id="B17">B17</li>
+		<li class="unitDescription">Replaces Bomber. Gains Siege I promotion & Evasion promotion, Extra strength (70 vs. 65)</li>
+		<li class="ability" id="manifestDestiny">Manifest Destiny</li>
+		<li class="abilityDescription">All land military units have +1 Sight. 50% discount when purchasing tiles.</li>
+	</ul>
+
+	<ul class="civ" id="arabia"> <h3>Arabia</h3>
+		<li class="unit" id="camelArcher">Camel Archer</li>
+		<li class="unitDescription">Replaces Knight. No Penalty Attacking Cities. Ranged attack (21). Reduced Strength (17 vs. 20)</li>
+		<li class="building" id="bazar">Bazar</li>
+		<li class="buildingDescription">Replaces market. Special traits: +2 gold. Provides 1 extra copy of each improved luxury resource near this City. +2 gold for each source of oil and oasis</li>
+		<li class="ability" id="tradeCaravans">Trade Caravans</li>
+		<li class="abilityDescription">+1 Gold from each Trade Route. Oil resources provide double quantity.</li>
+		<li class="abilityE" id="shipsOfTheDesert">Ships of the Desert</li>
+		<li class="abilityDescriptionE">Caravans gain 50% extended range. Your trade routes spread the home city's religion twice as effectively. Oil resources are doubled.</li>
+	</ul>
+
+	<ul class="civE" id="assyria"> <h3>Assyria</h3>
+		<li class="unit" id="siegeTower">Siege Tower</li>
+		<li class="unitDescription">Replaces Catapult. (Maintains Bonus vs Cities 200%). Cover I promotion. Extra Sight (1). Sapper: When next to an enemy city, other units within 2 tiles get a 50% bonus when attacking the city. Extra strength (12 vs 8)</li>
+		<li class="building" id="royalLibrary">Royal Library</li>
+		<li class="buildingDescription">Replaces library. 1 Great Work of Writing slot, which provides extra XP for units trained in the city when filled. Grants 10 extra XP if the Great Work slot is worked</li>
+		<li class="ability" id="TreasuresOfNineveh">Treasures of Nineveh</li>
+		<li class="abilityDescription">When a city is conquered, gain a free Technology already discovered by its owner. Gaining a city through a trade deal does not count, and it can only happen once per enemy city.</li>
+	</ul>
+
+	<ul class="civE" id="austria"> <h3>Austria</h3>
+		<li class="unit" id="hussar">Hussar</li>
+		<li class="unitDescription">Replaces Cavalry. Extra Sight (1). Enhance Flank Attack: Flank attack bonus increased by 50%. Extra movement (1)</li>
+		<li class="building" id="coffeHouse">Coffe House</li>
+		<li class="buildingDescription">Replaces Windmill. +5% Production in city. 25% Bonus to Great Person generation in cityMay be built in all cities, including ones built on hills.</li>
+		<li class="ability" id="diplomaticMariages">Diplomatic Mariages</li>
+		<li class="abilityDescription">Can spend Gold to annex or puppet a City-State that has been your ally for 5 turns.</li>
+	</ul>
+
+	<ul class="civ" id="aztec"> <h3>Aztec</h3>
+		<li class="unit" id="jaguar">Jaguar</li>
+		<li class="unitDescription">Replaces Warrior. Combat bonus in jungle & forest 33%. Woodsman double movement through jungle & forest	(does not stack with roads).</li>
+		<li class="unitDescription">Heals 25 damage if kills a unit</li>
+		<li class="building" id="floatingGardens">Floating Gardens</li>
+		<li class="buildingDescription">Replaces Water Mill. -1 Gold maintenance. +15% food. +2 Food for each worked Lake tile. Can also be built in cities next to Lakes.</li>
+		<li class="ability" id="sacrificialCaptives">Sacrificial Captives</li>
+		<li class="abilityDescription">Gains culture for the empire from each enemy unit killed.</li>
+	</ul>
+
+	<ul class="civD" id="babylon"> <h3>Babylon</h3>
+		<li class="unit" id="bowman">Bowman</li>
+		<li class="unitDescription">Replaces Archer. Extra strength 7v5 melee. 9vs7 range</li>
+		<li class="building" id="wallsOfBabylon">Walls of Babylon</li>
+		<li class="buildingDescription">Replaces Walls. +6 City Defense Strength. +100 City Hit Points. Less Production cost (65 vs. 75)</li>
+		<li class="ability" id="ingenuity">Ingenuity</li>
+		<li class="abilityDescription">Receive free Great Scientist when you discover Writing. Earn Great Scientists 50% faster.</li>
+	</ul>
+
+	<ul class="civE" id="brazil"> <h3>Brazil</h3>
+		<li class="unit" id="Pracinha">Pracinha</li>
+		<li class="unitDescription">Replaces infantry. Golden Age from Victories: Earn points toward a Golden Age for each enemy killed.</li>
+		<li class="tileImprovement" id="brazilwoodCamp">Brazilwood Camp</li>
+		<li class="tileDescription">Constructed on Jungle, (no need to chop down). +2 Gold. (total yield after upgrades: +2 food, +2 science, +2 gold, +2 culture.</li>
+		<li class="ability" id="carnival">Carnival</li>
+		<li class="abilityDescription">Tourism output is +100% during their Golden Ages. Earn Great Artists, Musicians, and Writers 50% faster during their Golden Ages.</li>
+	</ul>
+
+	<ul class="civE" id="byzantine"> <h3>Byzantine</h3>
+		<li class="unit" id="cataphract">Cataphract</li>
+		<li class="unitDescription">Replaces Horseman. Penalty Attacking Cities (25% only, less than normal). Affected by Defensive Terrain Bonuses. Extra strength (15 vs. 12). Slower movement (-1)</li>
+		<li class="unit" id="dromon">Dromon</li>
+		<li class="unitDescription">Replaces Trireme. Bonus vs Naval (+50%). May Not Melee Attack. Ranged attack (10). Reduced strength (8 vs. 10)</li>
+		<li class="ability" id="patriarchateOfConstantinople">Patriarchate of Constantinople</li>
+		<li class="abilityDescription">Choose one more Belief than normal when you found a Religion.</li>
+	</ul>
+
+	<ul class="civE" id="carthage"> <h3>Carthage</h3>
+		<li class="unit" id="africanForestElephant">African Forest Elephant</li>
+		<li class="unitDescription">Replaces Horseman. Great Generals II promotion. Feared Elephant: Enemy units receive -10% Combat Strength when adjacent to any unit with this promotion. Doesn't require Horses. Extra strength (14 vs. 12). Slower movement -1 Greater Production cost (100 vs. 75)</li>
+		<li class="unit" id="quinquereme">Quinquereme</li>
+		<li class="unitDescription">Replaces Trireme. Extra strength (13 vs. 10).</li>
+		<li class="ability" id="phoenicianHeritage">Phoenician Heritage</li>
+		<li class="abilityDescription">All coastal Cities get a free Harbor. Units may cross mountains after the first Great General is earned, taking 50 HP damage if they end a turn on a mountain.</li>
+	</ul>
+
+	<ul class="civE" id="celts"> <h3>Celts</h3>
+		<li class="unit" id="pictishWarrior">Pictish Warror</li>
+		<li class="unitDescription">Replaces Spearman. No Movement Cost to Pillage. Foreign Lands Bonus (20% Combat Bonus outside Friendly Territory). No combat bonus vs. mounted. Earns 50% of opponents' strength as Faith for kills.</li>
+		<li class="building" id="ceilidhHall">Ceilidh hall</li>
+		<li class="buildingDescription">Replaces Opera House. +3 Happines +1 Culture</li>
+		<li class="ability" id="druidicLore">Druidic Lore</li>
+		<li class="abilityDescription">+1 Faith per city with an adjacent unimproved Forest. Bonus increases to +2 Faith in Cities with 3 or more adjacent unimproved Forest tiles.</li>
+	</ul>
+
+	<ul class="civ" id="china"> <h3>China</h3>
+		<li class="unit" id="chukonu">Chu-ko-nu</li>
+		<li class="unitDescription">Replaces Crossbowman. May Attack Twice (in one turn). Lesser ranged strength (14 vs. 18).</li>
+		<li class="building" id="paperMaker">Paper Maker</li>
+		<li class="buildingDescription">Replaces Library. +2 Gold. No maintenance</li>
+		<li class="ability" id="artOfWar">Art of War</li>
+		<li class="abilityDescription">The Great General combat bonus is increased by 15%, and their spawn rate is increased by 50%</li>
+	</ul>
+
+	<ul class="civD" id="danish"> <h3>Danish</h3>
+		<li class="unit" id="berserker">Berserker</li>
+		<li class="unitDescription">Replaces Longswordsman. Amphibious promotion (Eliminates combat penalty for attacking from the sea or over a river.) Extra movement (+1)</li>
+		<li class="unit" id="norwegianSkiInfantry">Norwegian Ski Infantry</li>
+		<li class="unitDescription">Replaces Rifleman. Bonuses in Snow, Tundra, and Hills (+25% Combat Bonus) and double Movement</li>
+		<li class="ability" id="VikingFury">Viking Fury</li>
+		<li class="abilityDescription">Embarked units have +1 Movement and pay just 1 movement point to move from sea to land. Melee units pay no movement point cost to pillage.</li>
+	</ul>
+
+	<ul class="civE" id="dutch"> <h3>Dutch</h3>
+		<li class="unit" id="seaBeggar">Sea Beggar</li>
+		<li class="unitDescription">Replaces Privateer. Coastal Raider II promotion. Prize Ships: Defeated enemy naval units may join your side. Supply promotion</li>
+		<li class="tileImprovement" id="polder">Polder</li>
+		<li class="tileDescription">Constructed on: Marsh, flood plains. +3 food, +1 production. (total yield after upgrades: +3 food, +1 production, +2 gold. Can be built outside of territory</li>
+		<li class="ability" id="dutchEastIndiaCompany">Dutch East India Company</li>
+		<li class="abilityDescription">Retains 50% of the Happiness benefits from a Luxury Resource if your last copy of it is traded away.</li>
+	</ul>
+
+	<ul class="civ" id="egypt"> <h3>Egyptian</h3>
+		<li class="unit" id="warChariot">War Chariot</li>
+		<li class="unitDescription">Replaces Chariot. Doesn't require Horses. Extra movement +1</li>
+		<li class="building" id="burialTomb">Burial Tomb</li>
+		<li class="buildingDescription">Replaces Temple. +2 Happiness. Requires no Gold maintenance. Should this city be captured, the amount of Gold plundered by the enemy is doubled.</li>
+		<li class="ability" id="monumentBuilders">Monument Builders</li>
+		<li class="abilityDescription">+20% Production towards Wonder construction.</li>
+	</ul>
+
+	<ul class="civ" id="england"><h3>England</h3>
+		<li class="unit" id="longbowman">Longbowman</li>
+		<li class="unitDescription">Replaces Crossbowman. Range promotion (+1 Range.)</li>
+		<li class="unit" id="shipOfTheLine">Ship of the Line</li>
+		<li class="unitDescription">Replaces Frigate. Extra Sight (1). Extra strength melee (30 vs. 25). Extra strength range (35 vs. 28)</li>
+		<li class="ability" id="sunNeverSets">Sun Never Sets</li>
+		<li class="abilityDescription">+2 Movement for all naval units.</li>
+		<li class="abilityDescriptionE">+2 Movement for all naval units. Receives 1 extra Spy.</li>
+	</ul>
+
+	<ul class="civE" id="ethiopia"><h3>Ethiopia</h3>
+		<li class="unit" id="mehalSefari">Mehal Sefari</li>
+		<li class="unitDescription">Replaces Rifleman. Drill I promotion. Near Capital Bonus (30% stronger while fighting in the capital; bonus falls off as the unit gets further away). Less Production cost (200 vs. 225)</li>
+		<li class="building" id="stele">Stele</li>
+		<li class="buildingDescription">Replaces Monument. +2 Faith</li>
+		<li class="ability" id="spiritOfAdwa">Spirit of Adwa</li>
+		<li class="abilityDescription">Combat bonus (+20%) when fighting units from a Civilization with more Cities than Ethiopia.</li>
+	</ul>
+
+	<ul class="civ" id="french"><h3>France</h3>
+		<li class="unit" id="musketeer">Musketeer</li>
+		<li class="unitDescription">Replaces Musketman. Extra strength (28 vs. 24)</li>
+		<li class="tileImprovement" id="chateau">Chateau</li>
+		<li class="tileDescription">Constructed on: next to a luxury resource. Cannot be constructed next to another Chateau. (Sea-based luxuries are also eligible, as long as they border land tiles). + 1 Gold (+3 with Flight). +2 Culture (+3 with Flight). +50% Defensive bonus for any unit on that tile.</li>
+		<li class="ability" id="ancienRegime">Ancien Régime</li>
+		<li class="abilityDescription">+2 Culture per turn from Cities before discovering Steam Power.</li>
+		<li class="ability" id="cityOfLight">City of Light</li>
+		<li class="abilityDescription">Museum and World Wonder theme bonuses are doubled in their Capital.</li>
+	</ul>
+
+	<ul class="civ" id="germany"><h3>Germany</h3>
+		<li class="unit" id="landsknecht">Landsknecht</li>
+		<li class="unitDescription">Replaces Pikeman. No Movement Cost to Pillage. City Plunder promotion (Steals Gold equal to 100% of the damage inflicted on a city)</li>
+		<li class="unitE" id="panzer">Panzer</li>
+		<li class="unitDescriptionE">Replaces Tank. Extra strength (80 vs. 70). Extra movement (1)</li>
+		<li class="building" id="hanse">Hanse</li>
+		<li class="unitDescriptionE">Replaces Bank. +5% Production per City-State Trade Route in your empire</li>
+		<li class="ability" id="furorTeutonicus">Furor Teutonicus</li>
+		<li class="abilityDescription">Upon defeating a Barbarian unit inside an encampment, there is a 67% chance you earn 25 Gold and they join your side. Pay 25% less for land unit maintenance.</li>
+	</ul>
+
+	<ul class="civ" id="greece"><h3>Greece</h3>
+		<li class="unit" id="companionCavalry">Companion Cavalry</li>
+		<li class="unitDescription">Replaces Horseman. Great Generals I promotion (Combat Likely To Create Great Generals). Faster movement (+1). Extra strength (14 vs. 12).</li>
+		<li class="unit" id="hoplite">Hoplite</li>
+		<li class="unitDescription">Replaces Spearman. Extra strength (13 vs. 11).</li>
+		<li class="ability" id="hellenicLeague">Hellenic League</li>
+		<li class="abilityDescription">City-State Influence degrades at half and recovers at twice the normal rate.</li>
+	</ul>
+
+	<ul class="civE" id="hun"><h3>Hun</h3>
+		<li class="unit" id="horseArcher">Horse Archer</li>
+		<li class="unitDescriptionE">Replaces Chariot Archer. Accuracy I promotion (+15% Ranged Combat Strength against Units in OPEN Terrain). No Rough Terrain Penalty. Doesn't require Horses. Extra melee strength (7 vs. 6)</li>
+		<li class="unit" id="batteringRam">Battering Ram</li>
+		<li class="unitDescriptionE">Replaces Spearman. No defensive terrain bonuses. Limited Visibility (-1 Visibility Range). Cover I promotion (+33% Defense against all Ranged Attacks). Bonus vs Cities (300). Penalty on Defense (33). City Attack Only. No combat bonus vs. mounted. Lesser melee strength (10 vs 11)</li>
+		<li class="abilityE" id="scourgeOfGod">Scourge of God</li>
+		<li class="abilityDescriptionE">Raze Cities at double speed. Borrow City names from other in-game Civs. Start with Animal Husbandry technology. +1 Production per Pasture.</li>
+	</ul>
+
+	<ul class="civD" id="inca"><h3>Inca</h3>
+		<li class="unit" id="slinger">Slinger</li>
+		<li class="unitDescription">Replaces Archer. Withdraw Before Melee (Unit may withdraw when faced with melee attack). Less melee strength (4 vs. 5).</li>
+		<li class="tileImprovement" id="terraceFarm">Terrace Farm</li>
+		<li class="tileDescription">Constructed on: Hills (no need for fresh water, can't be constructed on bonus resource). +1 Food +1 additional Food for each adjacent mountain.</li>
+		<li class="ability" id="greatAndeanRoad">Great Andean Road</li>
+		<li class="abilityDescription">Units ignore terrain costs when moving into any tile with Hills. No maintenance costs for improvements in Hills; half cost elsewhere.</li>
+	</ul>
+
+	<ul class="civ" id="india"><h3>India</h3>
+		<li class="unit" id="warElephant">War Elephant</li>
+		<li class="unitDescription">Replaces Chariot Archer. No Rough Terrain Penalty. Doesn't require Horses. Extra strength (9 vs. 6 melee, 11 vs. 10 ranged). Slower movement -1. Greater Production cost (70 vs. 56)</li>
+		<li class="building" id="munghalFort">Munghal Fort</li>
+		<li class="buildingDescriptionE">Replaces Castle. +2 Culture per turn. +2 Tourism after Flight is researched.</li>
+		<li class="ability" id="populationGrowth">Population Growth</li>
+		<li class="abilityDescription">Unhappiness from number of Cities doubled, Unhappiness from number of Citizens halved.</li>
+	</ul>
+
+	<ul class="civE" id="indonesia"><h3>Indonesia</h3>
+		<li class="unit" id="krisSwordman">Kris Swordman</li>
+		<li class="unitDescription">Replaces Swordman. Mystic Blade: Free special promotion after the first battle, chosen at random. Often good, sometimes bad</li>
+		<li class="building" id="candi">Candi</li>
+		<li class="buildingDescription">Replaces Garden. +2 Faith. +2 additional Faith for each Religion that has at least 1 follower in the city. Does not have to be built next to a River or Lake.</li>
+		<li class="ability" id="spiceIslanders">Spice Islanders</li>
+		<li class="abilityDescription">The first 3 cities founded on continents other than where Indonesia started each provide 2 unique Luxury Resources (and can never be razed).</li>
+	</ul>
+
+	<ul class="civ" id="iroquois"><h3>Iroquois</h3>
+		<li class="unit" id="mohawkWarrior">Mohawk Warrior</li>
+		<li class="unitDescription">Replaces Swordman. Combat Bonus in Forest/Jungle (33). Does not require Iron</li>
+		<li class="building" id="longhouse">Longhouse</li>
+		<li class="buildingDescription">Replaces Workshop. +1 Production from each worked forest tile. No bonus of +10% Production in this city 20 less Production to build</li>
+		<li class="ability" id="theGreatWarpath">The Great Warpath</li>
+		<li class="abilityDescription">Units move through Forest and Jungle in friendly territory as if it is Road. These tiles can be used to establish Trade Routes upon researching The Wheel.</li>
+		<li class="abilityDescriptionE">Units move through Forest and Jungle in friendly territory as if they were Roads. These tiles can be used to establish City Connections upon researching The Wheel. Caravans move along Forest and Jungle as if they were Roads.</li>
+	</ul>
+
+	<ul class="civ" id="japan"><h3>Japan</h3>
+		<li class="unit" id="samurai">Samurai</li>
+		<li class="unitDescription">Replaces Longswordsman. Shock I promotion. Great Generals II promotion. Create Fishing Boats</li>
+		<li class="unit" id="zero">Zero</li>
+		<li class="unitDescription">Replaces Fighter. Bonus vs Fighters (33). Doesn't require Oil</li>
+		<li class="ability" id="bushido">Bushido</li>
+		<li class="abilityDescription">Units fight as though they were at full strength even when damaged.</li>
+		<li class="abilityDescriptionE">+1 Culture from each Fishing Boat and +2 Culture from atolls.</li>
+	</ul>
+
+	<ul class="civD" id="korea"> <h3>Korea</h3>
+		<li class="unit" id="turtleShip">Turtle Ship</li>
+		<li class="unitDescription">Cannot Enter Deep Ocean. No Extra Sight (1). No Withdraw Before Melee (Unit may NOT withdraw when faced with melee attack) Extra strength (36 vs. 20)</li>
+		<li class="unit" id="hwacha">Hwach'a</li>
+		<li class="unitDescription">No Limited Visibility. No Bonus vs Cities. Extra ranged strength (26 vs. 14). Lesser melee strength (11 vs. 12)</li>
+		<li class="ability" id="scholarsOfTheJadeHall">Scholars of the Jade Hall</li>
+		<li class="abilityDescription">+2 Science for all specialists and Great Person tile improvements. Receive a tech boost each time a scientific building/Wonder is built in the Korean capital.</li>
+	</ul>
+
+	<ul class="civE" id="maya"><h3>Maya</h3>
+		<li class="unit" id="atlatlist">Atlatlist</li>
+		<li class="unitDescription">Replaces Archer. Available with Agriculture (rather than Archery) Lesser Production cost (36 vs. 40)</li>
+		<li class="building" id="pyramid">Pyramid</li>
+		<li class="unitDescription">Replaces Shrine. +2 Faith. +2 Science</li>
+		<li class="ability" id="theLongCount">The Long Count</li>
+		<li class="abilityDescription">After researching Theology, receive a bonus Great Person at the end of every Maya Long Count calendar cycle (every 394 years). Each bonus person can only be chosen once.</li>
+	</ul>
+
+	<ul class="civD" id="mongolia"><h3>Mongolia</h3>
+		<li class="unit" id="keshik">Keshik</li>
+		<li class="unitDescription">Replaces Knight. No Penalty Attacking Cities. May Not Melee Attack. Great Generals I promotion. Quick study: Earns experience toward promotions 50% faster. Extra movement (+1). Ranged attack (16). Reduced Strength (15 vs. 20)</li>
+		<li class="unit" id="khan">Khan</li>
+		<li class="unitDescription">Great Person Replaces Great General. Enhanced Medic (This unit and all others in adjacent tiles Heal 15 Additional HP per turn). Extra movement (5 vs 2). </li>
+		<li class="ability" id="mongolTerror">Mongol Terror</li>
+		<li class="abilityDescription">Combat Strength +30% when fighting City-State units or attacking a City-State itself. All mounted units have +1 Movement.</li>
+	</ul>
+
+	<ul class="civE" id="morocco"><h3>Morocco</h3>
+		<li class="unit" id="berberCavalry">Berber Cavalry</li>
+		<li class="unitDescription">Replaces Cavalry. Homeland Guardian: +25% Bonus in combat in your territory. Desert Warrior: +50% Combat Strength when fighting in Desert</li>
+		<li class="tileImprovement" id="kashbah">Kashbah</li>
+		<li class="tileDescription">Constructed on: Desert. +1 Food, +1 Production, and +1 Gold. +50% Defensive bonus for any unit on that tile.</li>
+		<li class="ability" id="gatewayToAfrica">Gateway to Africa</li>
+		<li class="abilityDescription">Receives +3 Gold and +1 Culture for each Trade Route with a different civ or City-State. The Trade Route owners receive +2 Gold for each Trade Route sent to Morocco.</li>
+	</ul>
+
+	<ul class="civ" id="ottoman"><h3>Ottoman</h3>
+		<li class="unit" id="janissary">Janissary</li>
+		<li class="unitDescription">Replaces Musketman. Heal 50 Damage If Kills a Unit (Non-Barbarian) Combat Bonus When Attacking (+25%)</li>
+		<li class="unit" id="sipahi">Sipahi</li>
+		<li class="unitDescription">Replaces Lancer. Extra Sight (1). No Movement Cost to Pillage. Extra movement (1)</li>
+		<li class="ability" id="barbaryCorsairs">Barbary Corsairs</li>
+		<li class="abilityDescription">50% chance of converting a Barbarian naval unit to your side and earning 25 Gold. Pay only one-third the usual cost for naval unit maintenance.</li>
+		<li class="abilityDescriptionE">All melee naval units have the Prize Ships promotion, allowing them to capture defeated ships. Pay only one-third the usual cost for naval unit maintenance.</li>
+	</ul>
+
+	<ul class="civ" id="persia"><h3>Persia</h3>
+		<li class="unit" id="immortal">Immortal</li>
+		<li class="unitDescription">Replaces Spearman. Heals at Double Rate. Extra Strength (12 vs. 11)</li>
+		<li class="building" id="satrapsCourt">Satrap's Court</li>
+		<li class="buildingDescription">Replaces Bank. +2 Happiness +3 Gold</li>
+		<li class="ability" id="achaemenidLegacy">Achaemenid Legacy</li>
+		<li class="abilityDescription">Golden Ages last 50% longer. During a Golden Age, units receive +1 Movement and a +10% Combat Strength bonus.</li>
+	</ul>
+
+	<ul class="civE" id="poland"><h3>Poland</h3>
+		<li class="unit" id="wingedHussar">Winged Hussar</li>
+		<li class="unitDescription">Shock I promotion Heavy Charge: Forces defender to retreat if it inflicts more damage than it receives. A defender who cannot retreat takes extra damage. Extra strength (28 vs. 25) Extra speed (+1)</li>
+		<li class="building" id="ducalStable">Ducal Stable</li>
+		<li class="buildingDescription">+1 Production and +1 Gold for each source of Horses, Sheep, and Cattle worked by this City. +15 XP for Mounted Units produced in this City. No maintenance cost.</li>
+		<li class="ability" id="solidarity">Solidarity</li>
+		<li class="abilityDescription">Receive a free Social Policy when you advance to the next era.</li>
+	</ul>
+
+	<ul class="civD" id="polynesia"><h3>Polynesia</h3>
+		<li class="unit" id="maoriWarrior">Maori Warrior</li>
+		<li class="unitDescription">Haka War Dance (-10% combat strength for adjacent enemy units)</li>
+		<li class="tileImprovement" id="moai">Moai</li>
+		<li class="tileDescription">Constructed on: Coastal land tiles. +1 Culture. +1 additional Culture for each adjacent Moai. +1 Gold after researching Flight</li>
+		<li class="ability" id="wayfinding">Wayfinding</li>
+		<li class="abilityDescription">Can embark and move over Oceans immediately. +1 Sight when embarked. +10% Combat Strength bonus if within 2 tiles of a Moai.</li>
+	</ul>
+
+	<ul class="civE" id="portugal"><h3>Portugal</h3>
+		<li class="unit" id="nau">Nau</li>
+		<li class="unitDescription">Replaces Caravel. Extra Sight (1). Withdraw Before Melee. Exotic Cargo: May Sell Exotic Goods when adjacent to a foreign tile to gain gold and XP based on distance from capital, but only once. Extra movement (1). </li>
+		<li class="tileImprovement" id="feitora">Feitora</li>
+		<li class="tileDescription">Constructed on: City-state territory, on a coastal tile without resources. +1 copy of any luxury resource(s) the City-State has, regardless of relations. This resource cannot be traded. +50% Defensive bonus for any unit on that tile. Pillaging this improvement constitutes an act of war against Portugal.</li>
+		<li class="ability" id="mareClausum">Mare Clausum</li>
+		<li class="abilityDescription">Resource diversity grants twice as much Gold for Portugal in Trade Routes.</li>
+	</ul>
+
+	<ul class="civ" id="rome"><h3>Rome</h3>
+		<li class="unit" id="ballista">Ballista</li>
+		<li class="unitDescription">Replaces Catapult. Extra strength (8 vs. 7 melee, 10 vs. 8 ranged)</li>
+		<li class="unit" id="legion">Legion</li>
+		<li class="unitDescription">Replaces Swordman. Extra strength (17 vs. 14). Construct a Road. Construct a Fort.</li>
+		<li class="ability" id="theGloryOfRome">The Glory of Rome</li>
+		<li class="abilityDescription">+25% Production towards any buildings that already exist in the Capital.</li>
+	</ul>
+
+	<ul class="civ" id="russia"><h3>Russia</h3>
+		<li class="unit" id="cossack">Cossack</li>
+		<li class="unitDescription">Replaces Cavalry. Damaged Enemy Bonus (33).</li>
+		<li class="building" id="krepost">Krepost</li>
+		<li class="buildingDescription">Replaces Barracks. Culture and  Gold costs of acquiring new tiles reduced by 25% in this city.</li>
+		<li class="ability" id="siberianRiches">Siberian Riches</li>
+		<li class="abilityDescription">Strategic Resources provide +1 Production, and Horse, Iron and Uranium Resources provide double quantity</li>
+	</ul>
+
+	<ul class="civE" id="shoshone"><h3>Shoshone</h3>
+		<li class="unit" id="pathfinder">Pathfinder</li>
+		<li class="unitDescription">Replaces Scout. Native tongue (May choose benefit when discovering Ancient Ruins). Extra strength (8 vs. 5). Upgrades to Composite Bowman (rather than Archer) after entering an Ancient Ruin. Greater Production cost (45 vs. 25)</li>
+		<li class="unit" id="comancheRiders">Comanche Riders</li>
+		<li class="unitDescription">Replaces Cavalry. Full Moon Striker: +1 Movement. Less Production cost (200 vs. 225).</li>
+		<li class="ability" id="greatExpanse">Great Expanse</li>
+		<li class="abilityDescription">Founded cities start with additional territory. Units receive a combat bonus when fighting within their own territory.</li>
+	</ul>
+
+	<ul class="civ" id="siamese"><h3>Siamese</h3>
+		<li class="unit" id="naresuansElephant">Naresuan's elephant</li>
+		<li class="unitDescription">Replaces Knight. Bonus vs Mounted (50). Doesn't require Horses. Extra strength (25 vs. 20).Slower movement (-1).</li>
+		<li class="building" id="wat">Wat</li>
+		<li class="buildingDescription">Replaces University. +3 Culture</li>
+		<li class="ability" id="fatherGovernsChildren">Father Governs Children</li>
+		<li class="abilityDescription">Food and Culture from friendly City-States increased by 50%.</li>
+		<li class="abilityDescriptionE">Food, Culture and Faith from friendly City-States increased by 50%.</li>
+	</ul>
+
+	<ul class="civ" id="songhai"><h3>Songhai</h3>
+		<li class="unit" id="mandekaluCavalry">Mandekalu Cavalry</li>
+		<li class="unitDescription">Replaces Knight. No Penalty Attacking Cities. Less Production cost (110 vs. 120)</li>
+		<li class="building" id="mudPyramid">Mud Pyramid Mosque</li>
+		<li class="buildingDescription">+2 Culture. Requires no Gold maintenance.</li>
+		<li class="ability" id="Riverwarlord">River Warlord</li>
+		<li class="abilityDescription">Receive triple Gold from Barbarian encampments and pillaging Cities. Embarked units can defend themselves.</li>
+		<li class="abilityDescriptionE">Receive triple Gold from Barbarian encampments and pillaging Cities. Land units gain the War Canoe and Amphibious promotions, strengthening them while embarked.</li>
+	</ul>
+
+	<ul class="civD" id="spain"><h3>Spain</h3>
+		<li class="unit" id="tercio">Tercio</li>
+		<li class="unitDescription">Replaces Musketman. Extra strength (26 vs. 24). Greater Production cost (160 vs. 150)</li>
+		<li class="unit" id="conquistador">Conquistador</li>
+		<li class="unitDescription">Replaces Knight. Embarkation with Defense (Embarked units defend at double strength). Extra Sight (2). No Penalty Attacking Cities. Greater Production cost (135 vs. 120). Found City (Expends the unit and creates a city on its tile).</li>
+		<li class="ability" id="sevenCitiesOfGold">Seven Cities of Gold</li>
+		<li class="abilityDescription">Gold bonus for discovering a Natural Wonder (bonus enhanced if first to discover it). Culture, Happiness and tile yields from Natural Wonders doubled.</li>
+	</ul>
+
+	<ul class="civE" id="sweden"><h3>Sweden</h3>
+		<li class="unit" id="carolean">Carolean</li>
+		<li class="unitDescription">Replaces Rifleman. March promotion.</li>
+		<li class="unit" id="hakkapeliitta">Hakkapeliitta</li>
+		<li class="unitDescription">Replaces Lancer. Transfer Movement to General (Great General moves at rate of this unit if they start the turn stacked). Great General Combat Bonus (+15%)</li>
+		<li class="ability" id="nobelPrize">Nobel Prize</li>
+		<li class="abilityDescription">Gain 90 Influence (Civ5) Influence with a Great Person gift to a City-State. When declaring friendship, Sweden and their friend gain a +10% boost to Great Person generation.</li>
+	</ul>
+
+	<ul class="civE" id="venice"><h3>Venice</h3>
+		<li class="unit" id="merchantOfVenice">Merchant of Venice</li>
+		<li class="unitDescription">Replaces Great Merchant. Buy City-State (Purchases any City-State you are not at war with and in the territory of, and puts it and its units under your control).</li>
+		<li class="unit" id="greatGalleass">Great Galleass</li>
+		<li class="unitDescription">Replaces Galleass. Extra strength (18 vs 16 melee, 20 vs. 17 ranged). Greater Production cost (110 vs. 100)</li>
+		<li class="ability" id="serenissima">Serenissima</li>
+		<li class="abilityDescription">Cannot gain settlers nor annex cities. Double the normal number of trade routes available. A Merchant of Venice appears after researching Optics. May purchase in puppeted cities.</li>
+	</ul>
+
+	<ul class="civE" id="zulu"><h3>Zulu</h3>
+		<li class="unit" id="impi">Impi</li>
+		<li class="unitDescription">Replaces Pikeman. Spear Throw: Before engaging in melee, this unit has an extra attack. 25% Strength bonus against Gunpowder units</li>
+		<li class="building" id="ikanda">Ikanda</li>
+		<li class="buildingDescription">Replaces Barracks. Grants unique promotions to pre-gunpowder era melee units. +1 movement, +25% flank attack bonus, +10% defense against ranged attacks.</li>
+		<li class="ability" id="iklwa">Iklwa</li>
+		<li class="abilityDescription">Melee units cost 50% less maintenance. All units require 25% less experience to earn their next promotion.</li>
+	</ul>
+</body>
+</html>
